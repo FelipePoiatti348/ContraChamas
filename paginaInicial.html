@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contra Chamas | Aprovações e Renovações de AVCB</title><!--Titulo da pagina-->
+  <link rel="stylesheet" href="style(pag.inicial).css"><!--Referencial ao css(estilo) da pagina-->
+</head>
+<body>
+
+<!--Parte do cabeçalho-->
+<header>
+
+    <!-- Botão do menu (Esquerda) -->
+    <button id="btnToggle" class="toggle-btn">☰</button>
+
+    <!-- Titulo centrais -->
+    <div class="head-text">
+        <h1>Contra Chamas</h1>
+        <p>Aprovações e Renovações de AVCB</p>
+    </div>
+</header>
+
+<!-- SIDEBAR(Conteudo de dentro da side bar a esquerda) -->
+<div class="sidebar" id="sidebar">
+    <br><br><br><br><br><br>
+    <h2>Bem-vindo</h2>
+    
+    <!--Endereço das paginas-->
+    <a href="paginaInicial.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="entrar.html">Entrar</a>
+</div>
+
+<!-- Conteudo principal -->
+<div id="conteudo">
+
+<section>
+    <h2>Proteja seu patrimônio com segurança</h2>
+    <p>Na Contra Chamas, cuidamos de toda a parte técnica para que sua empresa ou residência esteja em dia com o Corpo de Bombeiros.</p>
+
+    <!--Imagens e textos explicativos na pagina-->
+    <div class="features">
+      
+      <!--Imagem Extintor-->
+      <div class="feature">
+        <img src="https://img.icons8.com/color/96/fire-extinguisher.png" alt="Extintor">
+        <h3>Regularização</h3>
+        <p>Emitimos e renovamos o AVCB de forma rápida e segura.</p>
+      </div>
+      
+      <!--Imagem Indicador-->
+      <div class="feature">
+       <img src="https://cdn-icons-png.flaticon.com/512/4245/4245686.png" alt="Indicador">
+       <h3>Consultoria</h3>
+       <p>Realizamos visitas técnicas e garantimos conformidade total.</p>
+      </div>
+      
+      <!--Imagem Engrenagem-->
+      <div class="feature">
+        <img src="https://img.icons8.com/color/96/engineering.png" alt="Engenharia">
+        <h3>Engenharia de Segurança</h3>
+        <p>Equipe especializada em prevenção e combate a incêndios.</p>
+      </div>
+
+    </div>
+
+</section>
+
+<!--Parte do formulario-->
+<section>
+    <h2>Solicite seu AVCB agora mesmo</h2><!--Titulo principal-->
+
+    <!--Formulario indicado que a ligaçao vai para enviar.php-->
+    <form action="enviar.php" method="POST" enctype="multipart/form-data">
+
+      <!--Nome formulario-->
+      <label>Nome completo</label>
+      <input type="text" name="nome" required>
+       
+      <!--Email formulario-->
+      <label>E-mail</label>
+      <input type="email" name="email" required>
+
+      <!--Telefone formulario-->
+      <label>Telefone</label>
+      <input type="text" name="telefone" required>
+
+      <!--Endereço formulario-->
+      <label>Endereço</label>
+      <input type="text" name="endereco">
+
+      <!--Avcb formulario-->
+      <label>Possui AVCB?</label>
+
+      <!--poçoes avcb formulario-->
+      <select name="tem_avcb" id="tem_avcb" required>
+        <option value="">Selecione</option>
+        <option value="Sim">Sim</option>
+        <option value="Não">Não</option>
+      </select>
+
+      <!--Arquivo para subir formulario-->
+      <div id="upload" style="display:none;">
+        <label>Anexar AVCB (PDF, JPG, PNG)</label>
+        <input type="file" name="arquivo" accept=".pdf,.jpg,.jpeg,.png">
+      </div>
+
+      <!--Metragem de area formulario-->
+      <label>Metragem da área construída (m²)</label>
+      <input type="number" name="area">
+
+      <!--Botao de enviar formulario-->
+      <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<!--Rodape-->
+<footer>
+    <p>© 2025 Contra Chamas - Todos os direitos reservados.</p>
+</footer>
+
+</div> <!-- Fecha conteudo -->
+
+<!--Script da pagina para o botao do menu e do upload de arquivo -->
+<script src="script(pag.inicial).js"></script>
+
+
+</body>
+</html>

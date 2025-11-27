@@ -1,0 +1,207 @@
+/* ===== Corpo do Pagina ===== */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  background: #f8f8f8;
+  color: #333;
+}
+
+/* ===== Cabecalho ===== */
+header {
+  background: linear-gradient(90deg, #f7931e, #ffb347);
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  padding: 0 20px;
+}
+
+/* ===== Texto do cabecalho(formato e cor) ===== */
+header .head-text {
+  text-align: center;
+  color: white;
+}
+
+/* ===== Texto do cabecalho(Texto principal) ===== */
+header .head-text h1 {
+   margin: 0; 
+   font-size: 34px; 
+}
+
+/* ===== Texto do cabecalho(Texto subtitulo) ===== */
+header .head-text p { 
+  margin: 4px 0 0; 
+  font-size: 22px;
+}
+
+/* ===== Botao do menu ===== */
+.toggle-btn {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #f7931e;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-size: 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* ===== Barra lateral(Sidebar) ===== */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background: #f7931e;
+    padding: 20px 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1050;
+}
+
+/* ===== Barra lateral(Sidebar aberta) ===== */
+.sidebar.aberta {
+  transform: translateX(0);
+}
+
+/* ===== Barra lateral(Texto principal) ===== */
+.sidebar h2 {
+  color: white;
+  font-size: 30px;
+  margin: 8px 20px 18px;
+}
+
+/* ===== Barra lateral(Texto de subtitulo) ===== */
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 20px 20px;
+  margin: 4px 0;
+  transition: background .15s;
+  font-size: 20px;
+}
+
+/* ===== Barra lateral(Texto do subtitulo:perto de clicar) ===== */
+.sidebar a:hover { 
+  background: #c7711b;; 
+}
+
+/* ===== Conteudo ===== */
+#conteudo {
+  transition: margin-left 0.3s ease;
+  padding: 24px;
+  padding-top: 75px;
+}
+
+/* ===== Conteudo quando empurrado ===== */
+#conteudo.empurrado {
+  margin-left: 240px;
+}
+
+/* ===== Seçoes ===== */
+section {
+   max-width: 1000px;
+   margin: 0 auto 40px; 
+   text-align: center; 
+}
+
+/* ===== Barra lateral(Sidebar) ===== */
+.features {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  gap:16px;
+  margin-top:75px;
+}
+
+/* ===== As imagens da pagina principal ===== */
+.feature {
+  background:#fff;
+  border-radius:12px;
+  width:300px;
+  padding:22px;
+  box-shadow:0 3px 8px rgba(0,0,0,0.08);
+}
+
+/* ===== Alturas das imagens ===== */
+.feature img {
+   height:60px;
+    margin-bottom:12px; 
+}
+
+/* ===== Formulario ===== */
+form {
+  background:#fff;
+  padding:28px;
+  border-radius:10px;
+  max-width:600px;
+  margin: 24px auto;
+  text-align:left;
+  box-shadow:0 3px 8px rgba(0,0,0,0.06);
+}
+
+/* ===== As informçoes do formulario  ===== */
+label { 
+  display:block; 
+  margin-top:12px; 
+  font-weight:600; 
+}
+
+/* ===== As caracteristicas do formulario ===== */
+input, select {
+  width:100%; 
+  padding:10px; 
+  margin-top:6px;
+  border-radius:6px; 
+  border:1px solid #ccc;
+}
+
+/* ===== Botao de enviar ===== */
+button[type="submit"] {
+  background:#f7931e;
+  color:#fff;
+  border:none;
+  padding:12px 18px;
+  border-radius:6px;
+  cursor:pointer;
+  margin-top:16px;
+}
+
+/* ===== Açao do botao na hora de enviar===== */
+button[type="submit"]:hover {
+  background:#c7711b;
+}
+
+/* ===== Rodape ===== */
+footer {
+  text-align:center;
+  padding:18px;
+  background:#282828;
+  color:#ddd;
+  margin-top:30px;
+  width: auto;
+}
+
+/* ===== Regras para aplicar para telas menores ===== */
+@media (max-width: 768px) {
+  .features { 
+    flex-direction:column;
+     align-items:center;
+}
+
+  .sidebar {
+     width: 200px;    
+}
+
+  #conteudo.empurrado {
+     margin-left: 200px;
+}
+}

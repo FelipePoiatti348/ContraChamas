@@ -1,0 +1,45 @@
+/* ===== Corpo da pagina ===== */
+body {
+ font-family: Arial, sans-serif;
+ background-color: #f9f9f9;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+}
+
+/* ===== Estilo do mensagem de obrigada ===== */
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* ===== Estilo da letra principal ===== */
+h1 {
+  color: #f7931e; 
+  margin-bottom: 10px;
+}
+
+/* ===== Cor da letra do subtitulo ===== */
+p { 
+  color: #555; 
+}
+
+/* ===== Cor do botao de enviar ===== */
+a {
+ display: inline-block;
+ margin-top: 20px;
+ text-decoration: none;
+ background: #ffb347;
+ color: white;
+ padding: 10px 20px;
+ border-radius: 5px;      
+}
+
+/* ===== Cor da açao do botao ao aperta ===== */
+a:hover {
+  background: #c7711b;
+ }
