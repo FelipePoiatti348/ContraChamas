@@ -1,0 +1,65 @@
+/* ===== Corpo do Pagina ===== */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  background: #f8f8f8;
+  color: #333;
+}
+
+/* ===== Formulario ===== */
+form {
+  background:#fff;
+  padding:28px;
+  border-radius:10px;
+  max-width:600px;
+  margin: 24px auto;
+  text-align:left;
+  box-shadow:0 3px 8px rgba(0,0,0,0.06);
+}
+
+/* ===== As informçoes do formulario  ===== */
+label { 
+  display:block; 
+  margin-top:12px; 
+  font-weight:600; 
+}
+
+/* ===== As caracteristicas do formulario ===== */
+input, select {
+  width:100%; 
+  padding:10px; 
+  margin-top:6px;
+  border-radius:6px; 
+  border:1px solid #ccc;
+}
+
+/* ===== Botao de enviar ===== */
+button[type="submit"] {
+  background:#f7931e;
+  color:#fff;
+  border:none;
+  padding:12px 18px;
+  border-radius:6px;
+  cursor:pointer;
+  margin-top:16px;
+}
+
+.voltar {
+    display: inline-block;
+    background:#f7931e;
+    color: white;
+    padding: 25px 25px;
+    font-size: 20px;
+    font-weight: 505;
+    text-decoration: 40px;
+    border-radius: 10px;
+    border: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 25px;
+}
+
+/* Hover */
+.voltar:hover {
+    background: #c7711b;
+}
