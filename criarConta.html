@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contra Chamas | Aprovações e Renovações de AVCB</title>
-    <link rel="stylesheet" href="style/style(entrar).css"><!-- Referencial ao CSS da página -->
+    <link rel="stylesheet" href="style/style(criarConta).css"><!-- Referencial ao CSS da página -->
 </head>
 <body>
 
     <!--Botao de voltar da Pagina,para a pagina inicial-->
-    <a href="paginaInicial.html" id="btnVoltar" class="voltar">←</a>
+    <a href="entrar.html" id="btnVoltar" class="voltar">←</a>
 
     <!--Titulo da pagina-->
-    <h2>Entrar</h2>
+    <h2>Criar Conta</h2>
 
     <!--Conteudo do formulario-->
     <div id="conteudo">
         <section>
             <form action="senha.php" method="POST" enctype="multipart/form-data">
-                
+
                 <!--Email do usuario-->
                 <label>E-mail</label>
                 <input type="email" name="email" required>
@@ -26,12 +26,13 @@
                 <!--Senha do usuario-->
                 <label>Senha</label>
                 <input type="password" name="senha" required>
-                
-                <!--Botao de entrar na area do usuario-->
-                <button type="submit" id="Entrar">Entrar</button>
 
-                <!--Botao para ir criar nova conta-->
-                <a href="criarConta.html" id="Criar" class="Criar">Criar Conta</a>
+                <!--Telefone do usuario-->
+                <label>Telefone</label>
+                <input type="text" name="Telefone" required>
+
+                <!--Botao para criar nova conta-->
+                <button type="submit" id="Criar">Criar Conta</button>
 
             </form>
         </section>

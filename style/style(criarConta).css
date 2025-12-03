@@ -38,25 +38,8 @@ input, select {
   border:1px solid #ccc;
 }
 
-/* ===== Botao de entrar ===== */
-button[id="Entrar"]{
-  background:#f7931e;
-  color:#fff;
-  border:none;
-  padding:12px 18px;
-  border-radius:6px;
-  cursor:pointer;
-  margin-top:16px;
-  font-size: 13px;
-}
-
-/* ===== Acao do botao entrar ===== */
-button:hover[id="Entrar"]{
-  background: #c7711b;
-}
-
-/* ===== Botao de criar===== */
-.Criar{
+/* ===== Botao criar ===== */
+button[id="Criar"]{
   background:#fbfbfb;
   color:#070707;
   border:none;
@@ -64,17 +47,14 @@ button:hover[id="Entrar"]{
   border-radius:6px;
   cursor:pointer;
   margin-top:16px;
-  text-decoration: none;
-  color: inherit; 
-  font-size: 13px;
 }
 
-/* ===== Acao do botao criar ===== */
-.Criar:hover{
+/* ===== Acao do botao criar===== */
+button:hover[id="Criar"]{
   background: #c5c5c3;
 }
 
-/* ===== Botao de voltar===== */
+/* ===== Botao voltar ===== */
 .voltar {
     display: inline-block;
     background:#f7931e;
@@ -87,11 +67,10 @@ button:hover[id="Entrar"]{
     border: 20px;
     cursor: pointer;
     transition: 0.2s;
-    margin: 25px;
+    margin: 25px;   
 }
 
 /* ===== Acao do botao voltar ===== */
 .voltar:hover {
     background: #c7711b;
 }
-
