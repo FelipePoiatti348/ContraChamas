@@ -16,3 +16,33 @@ document.getElementById('tem_avcb').addEventListener('change', function() { // d
 
 
 
+//Script para a pagina do sobre "solicitar avcb" puxar para esse formulario
+document.addEventListener("DOMContentLoaded", function () { // Aguarda todo o HTML ser carregado antes de executar o script
+
+    const headerAltura = 140; // Define a altura do cabeçalho fixo para descontar do scrollaltura do cabeçalho(140)
+
+    if (window.location.hash === "#form-avcb") { // Verifica se a URL contém a âncora #form-avcb
+ 
+        setTimeout(() => { // Atraso para garantir que tudo esteja carregado antes de calcular o scroll
+             const alvo = document.querySelector("#form-avcb");// Seleciona o elemento que possui o ID "form-avcb"
+
+            // Verifica se o elemento existe na página
+            if (alvo) {
+
+                // Calcula a posição exata para onde deve rolar,levando em conta o scroll atual, a posição do elemento,e a altura do cabeçalho fixo
+                const posicao = alvo.getBoundingClientRect().top + window.scrollY - headerAltura - 20;
+
+                // Faz o scroll suave até a posição calculada
+                window.scrollTo({
+                    top: posicao,
+                    behavior: "smooth"
+                });
+            }
+
+        }, 200); // Tempo de espera para garantir carregamento total do conteúdo
+    }
+});
+
+
+
+

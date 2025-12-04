@@ -40,8 +40,8 @@ input, select {
 
 /* ===== Botao criar ===== */
 button[id="Criar"]{
-  background:#fbfbfb;
-  color:#070707;
+   background:#f7931e;
+  color:#ffffff;
   border:none;
   padding:12px 18px;
   border-radius:6px;
@@ -51,7 +51,7 @@ button[id="Criar"]{
 
 /* ===== Acao do botao criar===== */
 button:hover[id="Criar"]{
-  background: #c5c5c3;
+  background: #c7711b;
 }
 
 /* ===== Botao voltar ===== */
@@ -59,8 +59,8 @@ button:hover[id="Criar"]{
     display: inline-block;
     background:#f7931e;
     color: white;
-    padding: 25px 25px;
-    font-size: 20px;
+    padding: 15px 15px;
+    font-size: 40px;
     font-weight: 505;
     text-decoration: 40px;
     border-radius: 10px;

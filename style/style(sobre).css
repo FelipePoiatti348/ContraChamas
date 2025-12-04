@@ -1,0 +1,166 @@
+/* ===== Corpo da Pagina ===== */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  background: #f8f8f8;
+  color: #333;
+}
+
+/* ===== Cabecalho ===== */
+header {
+  background: linear-gradient(90deg, #f7931e, #ffb347);
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  padding: 0 20px;
+}
+
+/* ===== Texto do cabecalho ===== */
+header .head-text {
+  text-align: center;
+  color: white;
+}
+
+/* ===== Texto do cabecalho(Texto principal) ===== */
+header .head-text h1 {
+   margin: 0; 
+   font-size: 34px; 
+}
+
+/* ===== Texto do cabecalho(Texto subtitulo) ===== */
+header .head-text p { 
+  margin: 4px 0 0; 
+  font-size: 22px;
+}
+
+/* ===== Seção principal ===== */
+#solicitacao-avcb {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ===== Títulos ===== */
+#solicitacao-avcb h1 {
+  font-size: 34px;
+  color: #f7931e;
+  margin-bottom: 10px;
+}
+
+/*===== Subtitulos =====*/
+#solicitacao-avcb h2 {
+  font-size: 26px;
+  margin-top: 35px;
+  color: #333;
+}
+
+/*===== Subtitulos =====*/
+#solicitacao-avcb h3 {
+  font-size: 22px;
+  margin-top: 20px;
+  color: #f7931e;
+}
+
+/* ===== Parágrafos ===== */
+#solicitacao-avcb p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 12px 0;
+}
+
+/* ===== Linha separadora dos texto em horizontal ===== */
+#solicitacao-avcb hr {
+  border: none;
+  height: 2px;
+  background: #f7931e;
+  width: 70%;
+  margin: 30px auto;
+  border-radius: 4px;
+}
+
+/* ===== Lista "Por que nos escolher" ===== */
+#solicitacao-avcb ul {
+  list-style: none;
+  padding: 0;
+  max-width: 750px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+/*===== Lista e formataçao dos itens da lista  =====*/
+#solicitacao-avcb ul li {
+  background: #fff;
+  padding: 14px 18px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  font-size: 18px;
+  border-left: 6px solid #f7931e;
+}
+
+/* ===== Botão Solicitar AVCB ===== */
+#solicitar {
+  background: #f7931e;
+  color: #fff;
+  border: none;
+  padding: 16px 26px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 25px;
+  display: inline-block;
+  text-decoration: none;
+
+}
+
+/* ===== Açao do botao do solicitar avcb ===== */
+#solicitar:hover {
+  background: #c7711b;
+}
+
+
+/* ===== Botão de voltar ===== */
+#btnVoltar {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #f7931e;
+  color: white;
+  border: none;
+  padding: 15px 15px;
+  font-size: 40px;
+  border-radius: 6px;
+  text-decoration: none;  
+  display: inline-block;   
+}
+
+/* ===== Regras para aplicar para telas menores ===== */
+@media (max-width: 768px) {
+
+  #solicitacao-avcb {
+    padding: 12px;
+  }
+
+  #solicitacao-avcb h1 {
+    font-size: 28px;
+  }
+
+  #solicitacao-avcb h2 {
+    font-size: 22px;
+  }
+
+  #solicitacao-avcb p {
+    font-size: 16px;
+  }
+
+  #solicitar {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+  }
+}

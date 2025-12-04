@@ -1,3 +1,8 @@
+/*===== Scroll da pagina "Referente ao script do sobre " =====*/
+html {
+  scroll-behavior: smooth;
+}
+
 /* ===== Corpo do Pagina ===== */
 body {
   font-family: "Poppins", Arial, sans-serif;
