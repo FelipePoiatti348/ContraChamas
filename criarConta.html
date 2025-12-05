@@ -17,26 +17,54 @@
     <!--Conteudo do formulario-->
     <div id="conteudo">
         <section>
-            <form action="senha.php" method="POST" enctype="multipart/form-data">
+            <form action="php/enviar.php" method="POST" onsubmit="return validarSenha()">
+
+                <!--Nome do usuario-->
+                <label>Nome Completo</label>
+                <input type="text" name="nome" required>
 
                 <!--Email do usuario-->
                 <label>E-mail</label>
                 <input type="email" name="email" required>
 
-                <!--Senha do usuario-->
-                <label>Senha</label>
-                <input type="password" name="senha" required>
-
                 <!--Telefone do usuario-->
                 <label>Telefone</label>
-                <input type="text" name="Telefone" required>
+                <input type="text" name="telefone" required>
 
-                <!--Botao para criar nova conta-->
-                <button type="submit" id="Criar">Criar Conta</button>
+                <!--Senha do usuario-->
+                <label>Senha</label>
+                <input type="password" id="senha" name="senha" required>
 
+                 <!--Confirma senha do usuario-->
+                <label>Confirmar Senha</label>
+                <input type="password" id="confirmar_senha" name="confirmar_senha" required>
+
+                 <!--Erro de senha do usuario-->
+                <p id="erroSenha" style="color:red; display:none; margin-top:5px;">
+                     As senhas não coincidem
+                </p>
+
+                 <!--Criar conta do usuario-->
+                <button type="submit" name="cadastrar_usuario" id="Criar">Criar Conta</button>
             </form>
+
+<script>
+function validarSenha() {
+    let senha = document.getElementById("senha").value;
+    let confirmar = document.getElementById("confirmar_senha").value;
+    let msgErro = document.getElementById("erroSenha");
+
+    if (senha !== confirmar) {
+        msgErro.style.display = "block";
+        return false; // não envia
+    }
+
+    msgErro.style.display = "none";
+    return true; // envia para enviar.php
+}
+
+           </script>
         </section>
     </div>
-
 </body>
 </html>
