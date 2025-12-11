@@ -17,7 +17,9 @@
     <!--Conteudo do formulario-->
     <div id="conteudo">
         <section>
-            <form action="senha.php" method="POST" enctype="multipart/form-data">
+ 
+            <!-- Para login via script -->
+            <form id="formLogin" method="POST">
                 
                 <!--Email do usuario-->
                 <label>E-mail</label>
@@ -26,14 +28,19 @@
                 <!--Senha do usuario-->
                 <label>Senha</label>
                 <input type="password" name="senha" required>
-                
+
+                <!--Espaço para mensagem de erro de login-->
+                <p id="mensagemErro" style="color: red; display: none;"></p>
+
                 <!--Botao de entrar na area do usuario-->
                 <button type="submit" id="Entrar">Entrar</button>
 
                 <!--Botao para ir criar nova conta-->
                 <a href="criarConta.html" id="Criar" class="Criar">Criar Conta</a>
-
             </form>
+
+            <!--Script da pagina(entrar)-->>
+            <script src="script/script(entrar).js"></script>
         </section>
     </div>
 

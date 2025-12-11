@@ -1,4 +1,3 @@
-
 function validarSenha() {
     let senha = document.getElementById("senha").value;
     let confirmar = document.getElementById("confirmar_senha").value;
