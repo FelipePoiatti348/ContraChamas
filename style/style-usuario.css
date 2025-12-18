@@ -1,0 +1,138 @@
+
+/* ===== Corpo do Pagina ===== */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  background: #f8f8f8;
+  color: #333;
+}
+
+/* ===== Cabecalho ===== */
+header {
+  background: linear-gradient(90deg, #f7931e, #ffb347);
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  padding: 0 20px;
+}
+
+/* ===== Texto do cabecalho(formato e cor) ===== */
+header .head-text {
+  text-align: center;
+  color: white;
+}
+
+/* ===== Texto do cabecalho(Texto principal) ===== */
+header .head-text h1 {
+   margin: 0; 
+   font-size: 34px; 
+}
+
+/* ===== Texto do cabecalho(Texto subtitulo) ===== */
+header .head-text p { 
+  margin: 4px 0 0; 
+  font-size: 22px;
+}
+
+/* ===== Botao de voltar ===== */
+#btnVoltar {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #f7931e;
+  color: white;
+  border: none;
+  padding: 15px 15px;
+  font-size: 40px;
+  border-radius: 6px;
+  text-decoration: none;  
+  display: inline-block;   
+}
+
+
+/* ===== Acao do botao voltar ===== */
+#btnVoltar:hover {
+    background: #c7711b;
+}
+
+
+/* ===== Botão flutuante inferior direito ===== */
+#btnAbrirFormulario {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #f7931e;
+  color: white;
+  font-size: 32px;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0,0,0,.3);
+}
+
+/* ===== Popup ===== */
+#formPopup {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+  display: none;
+  z-index: 9999;
+}
+
+/* ===== As informçoes do formulario  ===== */
+label { 
+  display:block; 
+  margin-top:12px; 
+  font-weight:600; 
+}
+
+/* ===== As caracteristicas do formulario ===== */
+input, select{
+  width:97%; 
+  padding:10px; 
+  margin-top:6px;
+  border-radius:6px; 
+  border:1px solid #ccc;
+}
+
+/* ===== Botao de enviar ===== */
+button[type="submit"] {
+  background:#f7931e;
+  color:#fff;
+  border:none;
+  padding:12px 18px;
+  border-radius:6px;
+  cursor:pointer;
+  margin-top:16px;
+}
+
+/* ===== Açao do botao na hora de enviar===== */
+button[type="submit"]:hover {
+  background:#c7711b;
+}
+
+/* ===== Botão fechar ===== */
+#btnFecharFormulario {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #f7931e;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}

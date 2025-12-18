@@ -1,41 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contra Chamas | Aprovações e Renovações de AVCB</title>
-    <link rel="stylesheet" href="style/style(usuario).css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contra Chamas | Aprovações e Renovações de AVCB</title>
+  <link rel="stylesheet" href="style/style-usuario.css">
 </head>
+
 <body>
-
-<!--Parte do cabeçalho-->
 <header>
+  <a href="entrar.html" id="btnVoltar">←</a>
 
-    <!--Botao de voltar da Pagina,para a pagina inicial-->
-    <a href="entrar.html" id="btnVoltar" class="voltar">←</a>
-
-    <!-- Titulo centrais -->
-    <div class="head-text">
-        <h1>Contra Chamas</h1>
-        <p>Aprovações e Renovações de AVCB</p>
-    </div>
+  <div class="head-text">
+    <h1>Contra Chamas</h1>
+    <p>Aprovações e Renovações de AVCB</p>
+  </div>
 </header>
 
- <!--Conteudo do formulario-->
-  <div id="conteudo">
-    <section>
-    <form action="php/usuario.php" method="POST">
-     
-          <p>Solicitacoes de AVCB</p>
+<!-- Botão flutuante -->
+<button id="btnAbrirFormulario">+</button>
 
-           <select name="solicitacoes" id="solicitacoes" required>
-           <option value="">Selecione</option>
-           <option value="Pendentes">Pendentes</option>
-           <option value="Concluidas">Concluidas</option>
-           </select>
+<!-- Popup do formulário -->
+<div id="formPopup">
+  <button id="btnFecharFormulario">✕</button>
 
-      <!--Botao de enviar formulario-->
-      <button type="submit">Procurar</button>
-    </form>
+  <form action="php/solicitacoes.php" method="POST" enctype="multipart/form-data">
+
+    <label>Nome completo</label>
+    <input type="text" name="nome" required>
+
+    <label>E-mail</label>
+    <input type="email" name="email" required>
+
+    <label>Telefone</label>
+    <input type="text" name="telefone" required>
+
+    <label>Endereço</label>
+    <input type="text" name="endereco">
+
+    <label>Possui AVCB?</label>
+    <select name="tem_avcb" id="tem_avcb" required>
+      <option value="">Selecione</option>
+      <option value="Sim">Sim</option>
+      <option value="Não">Não</option>
+    </select>
+
+    <div id="upload" style="display:none;">
+      <label>Anexar AVCB</label>
+      <input type="file" name="arquivo">
+    </div>
+
+    <label>Metragem da área (m²)</label>
+    <input type="number" name="area">
+
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
+<script>
+  const btnAbrir = document.getElementById("btnAbrirFormulario");
+  const btnFechar = document.getElementById("btnFecharFormulario");
+  const popup = document.getElementById("formPopup");
+
+  btnAbrir.onclick = () => popup.style.display = "block";
+  btnFechar.onclick = () => popup.style.display = "none";
+
+  const selectAvcb = document.getElementById("tem_avcb");
+  const upload = document.getElementById("upload");
+
+  selectAvcb.onchange = () => {
+    upload.style.display = selectAvcb.value === "Sim" ? "block" : "none";
+  };
+</script>
+
 </body>
 </html>
