@@ -53,6 +53,15 @@ header .head-text p {
   display: inline-block;   
 }
 
+#form {
+  background:#fff;
+  padding:28px;
+  border-radius:10px;
+  max-width:600px;
+  margin: 24px auto;
+  text-align:left;
+  box-shadow:0 3px 8px rgba(0,0,0,0.06);
+}
 
 /* ===== Acao do botao voltar ===== */
 #btnVoltar:hover {
@@ -78,11 +87,11 @@ header .head-text p {
 }
 
 /* ===== Popup ===== */
-#formPopup {
+#formPopup  {
   position: fixed;
   bottom: 90px;
   right: 20px;
-  width: 400px;
+  width: 352px;
   background: white;
   padding: 20px;
   border-radius: 12px;
