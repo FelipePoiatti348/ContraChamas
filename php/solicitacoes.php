@@ -47,8 +47,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // SQL usando prepared statement para evitar SQL Injection
-    $sql = "INSERT INTO solicitacoes (nome, endereco, email, telefone, tem_avcb, area, arquivo)
-            VALUES (?, ?, ?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO solicitacoes 
+          (nome, endereco, email, telefone, tem_avcb, area, arquivo, status)
+             VALUES (?, ?, ?, ?, ?, ?, ?, 'Pendente')";
 
     $stmt = $conn->prepare($sql); // Prepara a query
     $stmt->bind_param("sssssis", $nome, $endereco, $email, $telefone, $tem_avcb, $area, $arquivoNome); // Liga os valores aos placeholders do SQL

@@ -53,6 +53,7 @@ header .head-text p {
   display: inline-block;   
 }
 
+/*=== Estilo da formatacao do form de solicitacao P/C ===*/
 #form {
   background:#fff;
   padding:28px;
@@ -86,7 +87,7 @@ header .head-text p {
   box-shadow: 0 4px 10px rgba(0,0,0,.3);
 }
 
-/* ===== Popup ===== */
+/* ===== Estilo do formulario do Botao flutuante(Popup) ===== */
 #formPopup  {
   position: fixed;
   bottom: 90px;

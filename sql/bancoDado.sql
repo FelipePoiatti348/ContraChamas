@@ -20,6 +20,7 @@ CREATE TABLE solicitacoes (
   tem_avcb VARCHAR(10) NOT NULL,
   area DECIMAL(10,2) NOT NULL,
   arquivo VARCHAR(255) NOT NULL,
+  status ENUM('Pendente', 'Concluida') DEFAULT 'Pendente'
   data_envio TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
