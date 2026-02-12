@@ -9,7 +9,7 @@ Mini site desenvolvido para simular solicitações de serviços para uma empresa
 - Organização semântica de conteúdo
 
 ## Tecnologias utilizadas
-- HTML
+- HTML, JavaScript, PHP e CSS 
 - Git e GitHub
 
 ## Objetivo
