@@ -1,6 +1,8 @@
 <?php
-// Cria a conexão com o banco de dados MySQL
-$conn = new mysqli("localhost", "root", "", "contrachamas");
+
+//Ligacao com a pagina ignorada no git de informacoes pessoais
+require __DIR__ . '/config.php';
+
 
 // Verifica se houve erro na conexão
 if ($conn->connect_error) {

@@ -1,10 +1,10 @@
 <?php
 
+//Ligacao com a pagina ignorada no git de informacoes pessoais
+require __DIR__ . '/config.php';
+
 // Define que a resposta será enviada no formato JSON
 header("Content-Type: application/json");
-
-// Faz a conexão com o banco de dados MySQL
-$conn = new mysqli("localhost", "root", "", "contrachamas");
 
 // Verifica se houve erro na conexão com o banco
 if ($conn->connect_error) {

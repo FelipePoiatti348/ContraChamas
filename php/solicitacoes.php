@@ -1,13 +1,7 @@
 <?php
 
-// Dados de conexão com o banco
-$host = "localhost";
-$user = "root";
-$pass = "";
-$dbname = "contrachamas";
-
-// Cria a conexão usando MySQLi
-$conn = new mysqli($host, $user, $pass, $dbname);
+//Ligacao com a pagina ignorada no git de informacoes pessoais
+require __DIR__ . '/config.php';
 
 // Verifica se houve erro na conexão
 if ($conn->connect_error) {
