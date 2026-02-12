@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contra Chamas | Aprovações e Renovações de AVCB</title><!--Titulo da pagina-->
+   <link rel="stylesheet" href="style/style-administrador.css"><!--Referencial ao css(estilo) da pagina--> 
+</head>
+<body>
+
+<!--Botao de voltar da Pagina,para a pagina inicial-->
+<a href="paginaInicial.html" class="voltar">←</a>
+
+<!--Titulo da pagina-->
+<h2>Login Administrativo</h2>
+
+<!-- Para login de adimin via script -->
+<form action="admin.php" method="POST">
+
+    <!--Email do usuario-->
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <!--Senha do usuario-->
+    <label>Senha</label>
+    <input type="password" name="senha" required>
+
+    <!--Botao de entrar na area do usuario-->
+    <button type="submit" name="login">Entrar</button>
+
+</form>
+</body>
+</html>

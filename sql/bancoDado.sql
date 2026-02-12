@@ -24,6 +24,14 @@ CREATE TABLE solicitacoes (
   data_envio TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+--Table do Admin (adiministrador)
+CREATE TABLE administrador (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL
+);
+
+
 
 
 
