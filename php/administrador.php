@@ -1,7 +1,6 @@
 <?php
-
-//Ligacao com a pagina ignorada no git de informacoes pessoais
-require __DIR__ . '/config.php';
+session_start();
+require_once __DIR__ . '/config_ex.php';
 
 if (isset($_POST['login'])) {
 
@@ -20,6 +19,7 @@ if (isset($_POST['login'])) {
 
         if (password_verify($senha, $admin['senha'])) {
             $_SESSION['admin'] = true;
+            echo "<p style='color:green;'>Login realizado com sucesso!</p>";
         } else {
             echo "<p style='color:red;'>Senha incorreta</p>";
         }
@@ -30,4 +30,4 @@ if (isset($_POST['login'])) {
 
     $stmt->close();
 }
-
+?>

@@ -1,6 +1,7 @@
 <?php
 session_start();
-require __DIR__ . '/config.php';
+require 'config_ex.php';
+
 
 if (!isset($_SESSION['admin'])) {
     exit("Acesso negado.");

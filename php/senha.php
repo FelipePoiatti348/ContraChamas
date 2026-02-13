@@ -1,7 +1,8 @@
 <?php
 
 //Ligacao com a pagina ignorada no git de informacoes pessoais
-require __DIR__ . '/config.php';
+require 'config_ex.php';
+
 
 // Define que a resposta será enviada no formato JSON
 header("Content-Type: application/json");
