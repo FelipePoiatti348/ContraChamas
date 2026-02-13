@@ -1,7 +1,7 @@
 <?php
 
 //Ligacao com a pagina ignorada no git de informacoes pessoais
-require __DIR__ . '/config.php';
+require __DIR__ . '/config_ex.php';
 
 
 // Verifica se houve erro na conexão
