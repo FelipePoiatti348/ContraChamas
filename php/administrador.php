@@ -17,12 +17,13 @@ if (isset($_POST['login'])) {
 
         $admin = $result->fetch_assoc();
 
-        if (password_verify($senha, $admin['senha'])) {
-            $_SESSION['admin'] = true;
-            echo "<p style='color:green;'>Login realizado com sucesso!</p>";
-        } else {
-            echo "<p style='color:red;'>Senha incorreta</p>";
-        }
+    if ($senha === $admin['senha']){
+    $_SESSION['admin'] = true;
+    header("Location: painel-admin.php");
+    exit();
+    } else {
+    echo "<p style='color:red;'>Senha incorreta</p>";
+    }
 
     } else {
         echo "<p style='color:red;'>Email não encontrado</p>";
